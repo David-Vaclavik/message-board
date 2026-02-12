@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Message Board</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <h1>Message Detail</h1>
+            
+            <div class="message-detail">
+                <div class="message-group">
+                    <p><strong>Author:</strong></p> <p><%= message.user %></p>
+                </div>
+                <div class="message-group">
+                    <p><strong>ID:</strong></p> <p><%= message.id %></p>
+                </div>
+                <div class="message-group">
+                    <p><strong>Message:</strong></p> <p><%= message.text %></p>
+                </div>
+                <div class="message-group">
+                    <p><strong>Added:</strong></p> <p><%= message.added.toLocaleString("en-GB") %></p>
+                </div>
+            </div>
+
+            <a href="/" class="button">Go Back</a>
+        </div>
+    </div>
+</body>
+
+</html>

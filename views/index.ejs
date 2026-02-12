@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Message Board</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="wrapper">
+            <h1>Messages</h1>
+
+            <a href="/new">New</a>
+
+            <ul class="message-board">
+                <% messages.forEach((message)=> { %>
+                    <%- include('users/message', {id: message.id, user: message.user, text: message.text, added: message.added}); %>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
