@@ -15,8 +15,6 @@ const links = [
   { href: "new", text: "New" },
 ];
 
-// const users = ["Rose", "Cake", "Biff"];
-
 const messages = [
   {
     id: 1,
@@ -62,7 +60,8 @@ app.get("/message/:id", (req, res) => {
 });
 
 // Start the server
-const PORT = 3000;
+// MUST use env variable for PORT when deploying to Railway, otherwise it will not work
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, (error) => {
   if (error) {
     throw error;
