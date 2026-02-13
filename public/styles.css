@@ -99,7 +99,8 @@ a {
     font-size: 1.5rem;
     text-align: center;
 
-    background-color: oklch(90% 0 0);
+    background-color: oklch(88% 0 0);
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       background-color: oklch(92% 0 0);
@@ -133,6 +134,7 @@ a {
     border: 1px solid oklch(70% 0 0);
     padding: 1rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       background-color: oklch(90% 0 0);
@@ -144,6 +146,7 @@ a {
   }
 }
 
+/* in new message */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -178,6 +181,8 @@ button,
   cursor: pointer;
   color: oklch(92% 0 0);
   background-color: oklch(25% 0 0);
+
+  transition: all 0.2s ease-in-out;
 }
 button:hover,
 .main-container .button:hover {
