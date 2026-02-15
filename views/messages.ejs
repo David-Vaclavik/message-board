@@ -14,16 +14,16 @@
             
             <div class="message-detail">
                 <div class="message-group">
-                    <p><strong>Author:</strong></p> <p><%= message.user %></p>
+                    <p><strong>Author:</strong></p> <p><%= message.username %></p>
                 </div>
                 <div class="message-group">
                     <p><strong>ID:</strong></p> <p><%= message.id %></p>
                 </div>
                 <div class="message-group">
-                    <p><strong>Message:</strong></p> <p><%= message.text %></p>
+                    <p><strong>Message:</strong></p> <p><%= message.message %></p>
                 </div>
                 <div class="message-group">
-                    <p><strong>Added:</strong></p> <p><%= message.added.toLocaleString("en-GB") %></p>
+                    <p><strong>Added:</strong></p> <p><%= message.created_at.toLocaleString("en-GB") %></p>
                 </div>
             </div>
 

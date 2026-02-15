@@ -17,7 +17,7 @@
 
             <ul class="message-board">
                 <% messages.forEach((message)=> { %>
-                    <%- include('users/message', {id: message.id, user: message.user, text: message.text, added: message.added}); %>
+                    <%- include('users/message', {id: message.id, username: message.username, text: message.message, added: message.created_at}); %>
                 <% }); %>
             </ul>
         </div>
