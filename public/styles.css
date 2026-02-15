@@ -208,3 +208,21 @@ button:active,
     min-width: 80px;
   }
 }
+
+/* errors */
+
+.errors {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+}
+
+.errors ul {
+  list-style-position: inside;
+  color: #c00;
+}
+
+.errors li {
+  padding: 0.25rem 0;
+}

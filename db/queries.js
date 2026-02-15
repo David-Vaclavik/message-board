@@ -2,8 +2,10 @@ const pool = require("./pool");
 
 // columns: id, username, message, created_at
 
+// TODO: add error handling to all functions
+
 async function getAllMessages() {
-  const { rows } = await pool.query("SELECT * FROM messages");
+  const { rows } = await pool.query("SELECT * FROM messages ORDER BY created_at DESC");
   return rows;
 }
 

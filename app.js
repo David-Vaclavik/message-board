@@ -13,7 +13,6 @@ app.use(express.static(assetsPath));
 app.use(express.urlencoded({ extended: true }));
 app.use("/", usersRouter);
 
-// Start the server
 // MUST use env variable for PORT when deploying to Railway, otherwise it will not work
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, (error) => {
